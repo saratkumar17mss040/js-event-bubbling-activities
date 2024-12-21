@@ -15,6 +15,8 @@ more clartiy on UI. Please open the image with chrome browser.
 
 **Screenshots:**
 
+Cart add / remove:
+
 ![cart-add-remove-product img](cart-add-remove-product.png)
 
 Note for the author who checks the solution: If it feels hard to follow even after giving UI images and exact activity description, we can provide the bare bones, basic skeleton code to work on. it would be more better to follow through.

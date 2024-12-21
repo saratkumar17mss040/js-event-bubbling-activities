@@ -18,4 +18,4 @@ Please, update the code such that it doesn't get closed when overlay or modal co
 
 Make sure, to check all the sequence similar to how we had the subacitivties in activity 1. do all the subactivities of Activity 1 and check the sequence of logs. make use of style.diplay property for it. it would be more better to follow through.
 
-Note for the author who checks the solution: We can explain the solution, on how the event.stopPropagation() worked while clicking on the overlay, the log for body element is not printed, therby stopping it from propagation.
+Note for the author who checks the solution: We can explain the solution, on how the event.stopPropagation() worked while clicking on the overlay, the log for body element is not printed, thereby stopping it from propagation.

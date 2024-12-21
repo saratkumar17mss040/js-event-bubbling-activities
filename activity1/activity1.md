@@ -11,7 +11,11 @@ more clartiy on UI. Please open the image with chrome browser.
 
 **Screenshots:**
 
+Modal opened state UI:
+
 ![modal-opened img](modal-opened.png)
+
+Modal closed state UI:
 
 ![modal-closed img](modal-closed.png)
 
