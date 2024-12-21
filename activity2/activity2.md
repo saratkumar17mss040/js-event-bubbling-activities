@@ -74,4 +74,4 @@ solution, on how the event.stopPropagation() worked while clicking on the
 overlay, the log for body element is not printed, thereby stopping it from
 propagation.
 
-Solution: [link](.\index.html)
+Solution: [link](./index.html)

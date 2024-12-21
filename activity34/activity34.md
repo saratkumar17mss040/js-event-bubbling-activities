@@ -75,5 +75,5 @@ custom data attributes: https://developer.mozilla.org/en-US/docs/Learn_web_devel
 
 Note for the author who checks the solution: We can explain how we leverage event bubbling by attaching a single event listener on parent which helped without having multiple listeners thereby memory efficient and how we delegated the different clicks - add to cart, remove from cart
 
-Solution: [link](.\index.html)
+Solution: [link](./index.html)
 

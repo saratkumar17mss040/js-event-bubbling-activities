@@ -84,4 +84,4 @@ Note for the author who checks the solution: If it feels hard to follow even aft
 
 Note for the author who checks the solution: We can also add solutions to the subactivities
 
-Solution: [link](.\index.html)
+Solution: [link](./index.html)
