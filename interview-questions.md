@@ -1,6 +1,6 @@
 **Interview questions with answers:**
 
-What is the different phases related to event propagation ?
+1.What is the different phases related to event propagation ?
 
 Event propagation has three phases:
 
@@ -8,23 +8,24 @@ Capturing Phase: The event travels from the outermost ancestor to the target ele
 Target Phase: The event reaches and is handled by the target element.
 Bubbling Phase: The event bubbles up from the target element to the outermost ancestor.
 
-How do you control the flow of the phases, bubbling and capturing ?
+2.How do you control the flow of the phases, bubbling and capturing ?
 
 We can control the phase with the addEventListener method by setting the third argument to true (capturing) or false (bubbling) - default one.
 
-What is the difference between event target and event currentTarget ?
+3.What is the difference between event target and event currentTarget ?
 
 event.target refers to the element that triggered the event (e.g., the clicked element).
 event.currentTarget refers to the element the event listener is currently attached to.
 
 **Curious questions with answers:**
 
-1. Assume you have multiple event listeners on a single element with default behavior - bubbling phase.
-If you want to stop propagation, you can use event.stopPropagation(). will this line be required in all event listener callbacks or not ?. Can we remove writing event.stopPropagation() in all event listener callbacks ? How would you stop the propagation from happening if you can't use it more than once ? 
+1.Assume you have multiple event listeners on a single element with default behavior - bubbling phase.
+
+If you want to stop propagation, you can use event.stopPropagation(). will this line be required in all event listener callbacks or not ?. Can we remove writing event.stopPropagation() in all event listener callbacks ? How would you stop the propagation from happening if you can't use it more than once ?
 
 We can stop the event propagation and also prevent other listeners from being triggered on the same element, we can use event.stopImmediatePropagation(). This will stop both propagation and prevent other event listeners from being called.
 
-2. Do all events work on bubbling phase ?. 
+2.Do all events work on bubbling phase ?.
 How you can find say "blur" whether the event can bubble or not ?
 
 Yes most events like click, keydown, and mousemove go through the capturing and bubbling phases.
@@ -35,5 +36,3 @@ You can search in the MDN docs for any event that you need to check for. It will
 Link: https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event
 
 ![blur event mdn doc preview img](blur-event-mdn.png)
-
-

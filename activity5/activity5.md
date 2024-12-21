@@ -37,3 +37,6 @@ This will help to solidify the flow of these phases. We can then mention some re
 
 I have added add on interview and curious questions as well in interview-questions.md file. Do take a look at it.
 
+Interview questions link: [link](../interview-questions.md)
+
+
