@@ -26,7 +26,9 @@ Add click event listeners to outer, middle div and inner button both in bubbling
 
 Make sure to log on each callback function, event target id, currentTarget id
 
-Note: Please refer this link for how to add event listeners in capturing phase: https://javascript.info/bubbling-and-capturing#capturing, for to know difference between target vs currentTarget: https://www.jstips.co/en/javascript/difference-between-target-and-currentTarget
+Note: Please refer this link for how to add event listeners in capturing phase: https://javascript.info/bubbling-and-capturing#capturing 
+
+for to know difference between target vs currentTarget: https://www.jstips.co/en/javascript/difference-between-target-and-currentTarget
 
 Now click on outer div, middle div, inner button and observe the sequence the logs are printed.
 You can try turning on/off certain eventlistener that are in bubbling phase or capturing phase and observe the sequence of logs
@@ -36,6 +38,8 @@ Note for the author who checks the solution: we can come up with four exact sequ
 This will help to solidify the flow of these phases. We can then mention some real world use case like form input field pre-processing.
 
 I have added add on interview and curious questions as well in interview-questions.md file. Do take a look at it.
+
+Solution: [link](.\index.html)
 
 Interview questions link: [link](../interview-questions.md)
 

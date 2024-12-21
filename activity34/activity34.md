@@ -21,6 +21,59 @@ Cart add / remove:
 
 Note for the author who checks the solution: If it feels hard to follow even after giving UI images and exact activity description, we can provide the bare bones, basic skeleton code to work on. it would be more better to follow through.
 
+**Skeleton code**:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Event bubbling and delegation with product and cart items - Activity - 34
+    </title>
+  </head>
+  <body>
+    <section id="product-container">
+      <div class="product-item">
+        <p class="product">Table</p>
+        <button class="add-cart-btn">add to cart</button>
+        <button class="remove-cart-btn">remove from cart</button>
+      </div>
+      <div class="product-item">
+        <p class="product">Ladder</p>
+        <button class="add-cart-btn">add to cart</button>
+        <button class="remove-cart-btn">remove from cart</button>
+      </div>
+      <div class="product-item">
+        <p class="product">Chair</p>
+        <button class="add-cart-btn">add to cart</button>
+        <button class="remove-cart-btn">remove from cart</button>
+      </div>
+    </section>
+
+    <section id="cart-container">
+      <p>Cart items:</p>
+    </section>
+
+    <script>
+      // write your solution here
+    </script>
+  </body>
+</html>
+```
+
 Hint: Think how you can distinguish between add to cart, remove from cart button element - id, className, custom data attributes etc. log the event object and check out properites that you can make use of in your code. Handling cases where trying to add product on already added item and removing already removed item / or non-existing item from cart is not necessary. You can try doing it as bonus task
 
+Additional links for the activity:
+
+classList: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+closest: https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+
+custom data attributes: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_HTML_problems/Use_data_attributes
+
 Note for the author who checks the solution: We can explain how we leverage event bubbling by attaching a single event listener on parent which helped without having multiple listeners thereby memory efficient and how we delegated the different clicks - add to cart, remove from cart
+
+Solution: [link](.\index.html)
+
