@@ -1,0 +1,105 @@
+<!-- User understands the difference between event bubbling and event capturing -->
+
+<!-- Activity: Create two div container - outer, middle and one inner button such that they are nested in structure and have id like below skeleton code,
+ -->
+
+<!-- Eg: -->
+<!-- <div id="outer">
+  Outer div
+  <div id="middle">
+    Middle div
+    <button id="inner-btn">Click me - inner btn</button>
+  </div>
+</div>
+ -->
+
+<!-- Add click event listeners to outer, middle div and inner button both in bubbling phase and capturing phase, you should basically have total of 6 event listener callback functions, 
+  2 click event for outer div - capturing, bubbling phase, 
+  2 click event for middle div - capturing, bubbling phase, 
+  2 click event for inner button - capturing, bubbling phase. Make sure to log on each callback function, event target id, currentTarget id -->
+
+<!-- Now click on outer div, middle div, inner button and observe the sequence the logs are printed  -->
+<!-- You can try turning on/off certain eventlistener that are in bubbling phase or capturing phase and observe the sequence of logs  -->
+
+<!-- Note for the author who checks the solution: we can come up with four exact sequences to do for the user later on and ask the user to check with our solution. later, we can explain how capturing phase works from ancestor element to child element. These four sequences could be part of subactivity 5.1,5.2,5.3,5.4.
+This will help to solidify the flow of these phases. We can then mention some real world use case like form input field pre-processing -->
+
+<!-- Note: Please refer this link. for how to add event listeners in capturing phase: https://javascript.info/bubbling-and-capturing#capturing, for to know difference between target vs currentTarget: https://www.jstips.co/en/javascript/difference-between-target-and-currentTarget -->
+
+<!-- Solution code to the above activity: -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Capturing with Nested elements - Acitivity - 5</title>
+  </head>
+  <body>
+    <div id="outer" style="padding: 20px; border: 1px solid black">
+      Outer div
+      <div
+        id="middle"
+        style="padding: 20px; margin-top: 10px; border: 1px solid blue"
+      >
+        Middle div
+        <button id="inner-btn" style="padding: 10px">Click me</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let outer = document.getElementById("outer");
+    let middle = document.getElementById("middle");
+    let innerBtn = document.getElementById("inner-btn");
+
+    // Event listener for capturing phase
+    outer.addEventListener(
+      "click",
+      function (event) {
+        console.log("Outer Div (capturing phase)");
+        console.log("Event Target:", event.target.id);
+        console.log("Event Current Target:", event.currentTarget.id);
+      },
+      true
+    ); // true means this is capturing phase
+
+    middle.addEventListener(
+      "click",
+      function (event) {
+        console.log("Middle Div (capturing phase)");
+        console.log("Event Target:", event.target.id);
+        console.log("Event Current Target:", event.currentTarget.id);
+      },
+      true
+    );
+
+    innerBtn.addEventListener(
+      "click",
+      function (event) {
+        console.log("Button (capturing phase)");
+        console.log("Event Target:", event.target.id);
+        console.log("Event Current Target:", event.currentTarget.id);
+      },
+      true
+    );
+
+    // Event listener for bubbling phase (default phase)
+    outer.addEventListener("click", function (event) {
+      console.log("Outer Div (bubbling phase)");
+      console.log("Event Target:", event.target.id);
+      console.log("Event Current Target:", event.currentTarget.id);
+    }); //  default behaviour: false means this is bubbling phase
+
+    middle.addEventListener("click", function (event) {
+      console.log("Middle Div (bubbling phase)");
+      console.log("Event Target:", event.target.id);
+      console.log("Event Current Target:", event.currentTarget.id);
+    });
+
+    innerBtn.addEventListener("click", function (event) {
+      console.log("Button (bubbling phase)");
+      console.log("Event Target:", event.target.id);
+      console.log("Event Current Target:", event.currentTarget.id);
+    });
+  </script>
+</html>
