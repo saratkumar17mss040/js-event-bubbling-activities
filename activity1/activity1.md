@@ -85,3 +85,25 @@ Note for the author who checks the solution: If it feels hard to follow even aft
 Note for the author who checks the solution: We can also add solutions to the subactivities
 
 Solution: [link](index.html)
+
+Add on section based on given feedback:
+
+activity1.md: Add what will learners realise/learn by doing each of the sub activities
+
+By doing each of the subactivities mentioned above, the learners will realize the flow in which the event callbacks are called, i.e - it will flow from the element that interacted with all the way to parent root element. child -> parent element.
+
+This will help in understanding the default behavior of how the events are bubbled up from the element they interacted with, all the way to the parent element.
+
+Eg: 
+
+Subactivity 1.2: click on button inside modal and observe the sequence in which the logs are printed.
+
+logs for the above activity:
+
+Button inside modal clicked
+
+Modal content clicked
+
+Overlay clicked
+
+Body clicked

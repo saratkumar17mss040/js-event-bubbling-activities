@@ -75,3 +75,21 @@ overlay, the log for body element is not printed, thereby stopping it from
 propagation.
 
 Solution: [link](index.html)
+
+Add on section based on given feedback:
+
+activity2.md
+
+Expected learning outcome: User should be able to prevent event bubbling using event.stopPropagation()
+
+Activity: "we want the modal to be closed only when modal inside button is clicked. Please, update the code such that it doesn't get closed when overlay or modal content is clicked"
+
+Observation: Even after commenting out the "event.stopPropagation();" in the overlay event listener, clicking anywhere other than the inner button doesn't close the modal. What is the need for "event.stopPropagation();", then, for this use case?
+
+For this, as per the observation i have reframed the question:
+
+"we want the modal to be closed only when modal inside button is clicked. Please, update the code such that it doesn't get closed when overlay or modal content is clicked and also make sure when overlay and modal content is clicked, the event should not bubble up all the way to the body"
+which means it should not log "Body clicked" for any action.
+
+Through this, the need for event.stopPropagation() is must.
+
