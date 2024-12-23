@@ -14,4 +14,9 @@ Activity 34: [link](activity34/activity34.md)
 
 Activity 5: [link](activity5/activity5.md)
 
+Some of the tools and references that i have used are:
+
+mdn
+javascript info
+windows native snip & sketch for basic highlighting on UI
 
